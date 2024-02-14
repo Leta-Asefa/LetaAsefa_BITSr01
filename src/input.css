@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply w-40 bg-gray-300 rounded-md overflow-hidden shadow-sm shadow-slate-400 p-1 relative;
+}
+
+.badge{
+    @apply bg-blue-300 rounded-full p-1 absolute top-2 flex;
+}
+
