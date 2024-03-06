@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.card{
-    @apply  bg-gray-100 rounded-md overflow-hidden shadow-sm shadow-slate-300 p-1 relative border-2 border-white hover:border-2 hover:border-black;
+  
+.header{
+   @apply md:grid md:grid-cols-1 md:mt-1
 }
 
-.badge{
-    @apply bg-blue-300 rounded-full p-1 absolute top-2 flex;
+.navbar{
+        @apply  text-white font-bold font-sans text-center  md:mx-auto md:col-span-10;
+    }
+.navbar-div{
+        @apply bg-violet-600 md:rounded-lg;
+    }
+.navbar-div-ul{
+        @apply  md:visible md:flex md:justify-center md:gap-4 md:text-xl p-3  lg:px-4 lg:rounded-2xl;
+    }
+@layer{
+    header nav ul li{
+        @apply rounded-md border-none hover:bg-white hover:text-black 
+    }
 }
+
 
