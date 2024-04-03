@@ -1,0 +1,20 @@
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+    <!-- Semi-circle background - left -->
+    <path d="M0,12A12,12 0 0 1 24,12A12,12 0 0 1 0,12ZM0,12A12,12 0 0 1 24,12A12,12 0 0 1 0,12Z" fill="url(#left_gradient)" />
+    <!-- Semi-circle background - right -->
+    <path d="M24,12A12,12 0 0 1 0,12A12,12 0 0 1 24,12ZM24,12A12,12 0 0 1 0,12A12,12 0 0 1 24,12Z" fill="url(#right_gradient)" />
+    <!-- Text '5' -->
+    <text x="50%" y="50%" font-size="16" font-weight="bold" fill="white" text-anchor="middle" alignment-baseline="middle">5</text>
+    <!-- Left Gradient definition -->
+    <defs>
+        <linearGradient id="left_gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="24" y2="0">
+            <stop offset="50%" stop-color="limegreen" />
+            <stop offset="50%" stop-color="red" />
+        </linearGradient>
+        <!-- Right Gradient definition -->
+        <linearGradient id="right_gradient" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="0" y2="0">
+            <stop offset="50%" stop-color="red" />
+            <stop offset="50%" stop-color="limegreen" />
+        </linearGradient>
+    </defs>
+</svg>

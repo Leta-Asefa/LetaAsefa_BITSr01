@@ -4,99 +4,398 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leta Asefa</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css"> 
+   
+
 </head>
 
-<body >
+<body  class="absolute inset-0 bg-cover bg-center" style="background-image: url('../img/gifbg.gif');">
 
-    <!-- Header Section -->
-
-    <header class="header">
+        <!-- Header Section -->
+        <div id="home" class="">.</div>
+        <div  class="mt-11"></div>
+        <header  class="fixed top-0 left-0 z-50 w-full">
+           
+            <!--#1 Navigation Bar -->
+        <nav  class="navbar">
         
-        <!--#1 Navigation Bar -->
-    <nav class="navbar">
-      
-        <div class="navbar-div">
-            <div id="menuButton" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-             </div>
+            <div class="navbar-div">
+                <div id="menuButton" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                </div>
 
-        <ul id="menuItems" class="navbar-div-ul hidden">
-            <li>
-                <a href="#" >Home</a>
-            </li>
-            <li>
-                <a href="#">Skills</a>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Education</a>
-            </li>
-            <li>
-                <a href="#">Habits</a>
-            </li>
-            <li>
-                <a href="#">Testimonials</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+            <ul id="menuItems" class="navbar-div-ul hidden">
+                <li>
+                    <a href="#home" >Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#educationalBG">Education</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contact</a>
+                </li>
 
 
-        </ul>
-    </div>
-    </nav>
-    </header>
-  
-   <!--#2 Image,Intro,Description -->
-    <div class="m-1 sm:grid md:grid-cols-2 sm:grid-cols-1 gap-3">
-            <div class="bg-violet-600 w-full h-60 md:h-full mx-auto rounded-lg"> </div>
-            <div class="">
-                <div class="bg-violet-600 w-full h-60 mx-auto rounded-lg"> </div>
-                <div class="bg-violet-600 w-full h-60 mx-auto rounded-lg mt-1"> </div>
-            </div>
-    </div>
-
-    <!--#3 Mini Techstack -->
-    <div class="mx-1 my-3 flex gap-5 overflow-x-scroll">
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-        <div class="rounded-lg min-w-24 h-20 bg-violet-600">Java</div>
-    </div>
+            </ul>
+        </div>
+        </nav>
+        </header>
     
+        <!--#2 Image,Intro,Description -->
+        <div  class="m-1 grid md:grid-cols-2 grid-cols-1 gap-3 ">
+
+
+            <div class="mx-auto md:mx-0">
+                <div class="w-full md:h-full mx-auto rounded-lg relative  col-span-1 group"> 
+                    <img src="../img/blob (1).svg" class="h-60 md:h-full md:absolute lg:top-10 lg:left-20 lg:group-hover:left-24 lg:group-hover:top-8 top-0 left-0 mx-auto transition-all duration-1000 ease-linear"/>
+                    <img src="../img/profilepic.webp" class="max-h-60 md:max-h-full absolute  rounded-full lg:group-hover:left-36 lg:group-hover:top-2 top-0 left-23 lg:left-40 md:left-28 transition-all duration-1000 ease-linear">
+                </div>
+                
+            </div>
+
+
+            <div class="mt-0 text-white">
+                <div class="w-full md:h-60 h-24 mx-auto rounded-lg md:text-7xl text-3xl text-center  md:py-10  "> 
+                    <div class="font-bold">Leta Asefa</div>
+                    <div class="lg:text-2xl md:text-xl text-lg">A <span class="font-bold">Software Developer</span> With A Passion For <span class=" font-bold">Backend</span>  Development</div>  
+                </div>
+                <div class="w-full h-60 mx-auto rounded-lg  text-lg font-bold text-center px-7"> 
+                    <span class="text-3xl">&#x1F44B;</span> Discover my diverse portfolio! With a wealth of personal projects and internship programs under my belt, I've gathered extensive experience in software development. I assure you that my skills are guaranteed to meet your satisfaction.
+                    <div class="text-sm font-bold text-yellow-800">
+                        <div> &starf; Backend  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &starf;API Development</div>
+                        <div> &starf; Frontend &nbsp;&nbsp;&nbsp;&nbsp; &starf;Database Design  </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+
+               
+        </div>
+
+        <!--#3 Mini Techstack -->
+        <div class=" flex-container w-full">
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/java-4-logo-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/spring-boot-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/junit5-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/fx-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/html-5-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/css3-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/tailwind-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/bootstrap-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/javascript-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/nodejs-svgrepo-com.svg"/>
+            </div>
+           <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/express.svg"/>
+            </div>
+             <div class="rounded-lg min-w-24 max-h-10 bg-transparent flex-item">
+                <img src="../img/react-javascript-js-framework-facebook-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/python-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/mysql-logo-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/mongo-svgrepo-com.svg"/>
+            </div>
+            
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/maven-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/eclipse-icon-svgrepo-com.svg"/>
+            </div>
+            <div class="rounded-lg min-w-24 max-h-16 bg-transparent flex-item">
+                <img src="../img/vscode-svgrepo-com.svg"/>
+            </div> 
+        </div>
+        
+    
+
+        <!--#4 Skills -->
+        <div id="skills" class="">
+            <h2 class="sections-title">Skills</h2>
+            <div class="md:h-81 grid grid-cols-1 md:grid-cols-2">
+
+                <!-- techstacks -->
+                <div class="  bg-violet-100 m-5 rounded-3xl " >
+            
+                    <h2 class="text-center font-bold text-xl my-5">Techstack</h2>
+                
+                    <div id="programmingContainer" class="">
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Java</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 84%;"></div>
+                            </div>
+                            <h1 class="bar-percent">84%</h1>
+                        </div>
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Springboot</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 65%;"></div>
+                            </div>
+                            <h1 class="bar-percent" >65%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">JUnit5</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 90%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >90%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Html</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 93%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >93%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Css</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 65%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >65%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">TailwindCss</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 87%;"> </div>
+                            </div>
+                                <h1 class="bar-percent" >87%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Bootstrap</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 50%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >50%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Javscript</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 55%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >55%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">NodeJs</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 50%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >50%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Express</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 55%;"></div>
+                            </div>
+                            <h1 class="bar-percent" >55%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">React</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 68%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >68%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Python</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 45%;"></div>
+                            </div>
+                            <h1 class="bar-percent" >45%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">MySQL</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 80%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >80%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">MongoDB</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 65%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >65%</h1>
+                        </div>
+
+
+                    
+
+
+                    </div>
+                    </div>
+
+                <div class="h-81 grid grid-cols-1 gap-y-8 m-5">
+                    <!--tools -->
+                    <div class="bg-violet-100 rounded-3xl py-5">
+
+                        <h2 class="text-center text-3xl font-bold my-5">Tools</h2>
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Git</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 64%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >64%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Github</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 67%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >67%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Maven</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 88%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >88%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Vscode</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 76%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >76%</h1>
+                        </div>
+
+
+                        <div class="bar-container">
+                            <h2 class="bar-text">Eclipse</h2>
+                            <div class="bar-horizontal">
+                                <div class="bar" style="width: 92%;"></div>
+                            </div>
+                                <h1 class="bar-percent" >92%</h1>
+                        </div>
+                    </div>
+
+                    <!-- soft skills -->
+                    <div class=" bg-violet-100 rounded-3xl p-3">
+                        
+                        <h2 class="text-center text-3xl font-bold my-5">Soft Skills</h2>
+
+                    <ul class="text-center text-sm font-bold grid grid-cols-2">
+                        <div> 
+                            <li>Communication</li> 
+                            <li> Adaptability</li> 
+                             <li>Problem-Solving</li> 
+                            <li> Creativity</li> 
+                            <li> Collaboration</li> 
+                        </div> 
+                        
+                        <div>  
+                            <li>Time Management</li> 
+                            <li>Empathy</li> 
+                            <li>Attention to Detail</li> 
+                            <li>Continuous Learning</li> 
+                        </div> 
+                        </ul>
+                    </div>
+
+                        
+                </div>
+
+            </div>
+        </div>
+
+       
+
+        
+
+
+       
+
 
 
     <script>
         let menuButton=document.getElementById('menuButton')
         let menuItems=document.getElementById('menuItems')
+        let baseImgPath="../img/"
+        let images=['1 (10).jpg','1 (11).jpg','1 (12).jpg','1 (13).jpg','1 (14).jpg']
 
         menuButton.addEventListener('click',()=>{
             console.log('clicked')
             menuItems.classList.toggle('hidden')
         })
 
+        menuItems.addEventListener('click',()=>{
+            menuItems.classList.add('hidden')
+        })
+
+        
 
 
     </script>

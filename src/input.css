@@ -4,22 +4,344 @@
 
   
 .header{
-   @apply md:grid md:grid-cols-1 md:mt-1
+   @apply 
+   md:grid 
+   md:grid-cols-1;
 }
 
 .navbar{
-        @apply  text-white font-bold font-sans text-center  md:mx-auto md:col-span-10;
+    @apply  
+    text-white 
+    font-bold 
+    font-sans 
+    text-center  
+    md:mx-auto 
+    md:col-span-10;
+    
     }
 .navbar-div{
-        @apply bg-violet-600 md:rounded-lg;
+        @apply 
+        bg-violet-600 
+        md:rounded-lg;
     }
 .navbar-div-ul{
-        @apply  md:visible md:flex md:justify-center md:gap-4 md:text-xl p-3  lg:px-4 lg:rounded-2xl;
+        @apply  
+        md:visible 
+        md:flex 
+        md:justify-center 
+        md:gap-4 
+        md:text-xl 
+        p-3  
+        lg:px-4 
+        lg:rounded-2xl;
     }
 @layer{
     header nav ul li{
-        @apply rounded-md border-none hover:bg-white hover:text-black 
+        @apply 
+        rounded-md 
+        border-none 
+        hover:bg-white 
+        hover:text-black 
     }
 }
+.sections-title{
+    @apply text-center text-4xl font-bold text-white ;
+}
+.bar{
+    @apply  
+    h-3 
+    bg-violet-600 
+    rounded-lg 
+    overflow-hidden;
+}
+.bar-percent{
+    @apply 
+    font-bold 
+    text-sm 
+    mx-2;
+}
+
+.bar-horizontal{
+    @apply   
+    md:w-96 
+    h-3 
+    bg-white 
+    rounded-lg 
+    flex 
+    justify-between
+    items-center;
+    width: 60%;
+}
+.bar-container{
+    @apply 
+    flex 
+    justify-between 
+    items-center 
+    px-4 
+    overflow-hidden ;
+}
+
+.bar-text{
+    @apply 
+    font-bold 
+    w-20 
+    text-sm;
+    width: 40%;
+}
+
+.softskills{
+    @apply 
+    font-bold 
+    text-2xl;
+}
+.h-95{
+    height: 95%;
+}
+.h-81{
+    height: 62%;
+}
+.left--8{
+    left: 8%;
+}
+.left-10{
+    left: 10%;
+}
+.left-21{
+    left: 21%;
+}
+.left-23{
+    left: 23%;
+}
+.left-26{
+    left: 26%;
+}
+.left-10{
+    left: 25%;
+}
+
+
+
+.flex-container {
+    @apply 
+    my-20 
+    md:my-0  
+    flex 
+    gap-5  
+    h-32;
+    overflow-x: scroll;
+    width: 99%;
+    margin-bottom:2px;
+  }
+
+  .flex-container::-webkit-scrollbar {
+      display: none;
+    }
+
+  .flex-item {
+    animation: slide 20s linear infinite alternate; /* Animation for sliding */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-100% - 10px)); /* Slide to the left */
+  }
+  100% {
+    transform: translateX(0); /* Slide to the right */
+  }
+}
+
+
+
+.project-container{
+    @apply 
+    grid 
+    grid-cols-1 
+    md:grid-cols-2 
+    lg:grid-cols-3
+    md:m-16
+    gap-x-3;
+}
+
+.project-card{
+    @apply 
+    grid 
+    grid-cols-2
+    gap-2 
+    p-0 
+    border-2 
+    border-transparent 
+    hover:border-white 
+    rounded-2xl 
+    bg-indigo-900
+    text-slate-200
+    m-5 
+    shadow-lg 
+    hover:transform 
+    hover:scale-110 
+    transition-transform 
+    duration-300;
+}
+
+.project-img{
+    @apply  
+    rounded-2xl  
+    p-1 
+    object-cover 
+    h-full ;
+}
+.project-texts{
+    @apply 
+    flex 
+    flex-wrap 
+    p-1
+    font-sans;
+}
+.project-title{
+    @apply 
+    text-center 
+    font-bold 
+    underline
+    text-lg 
+    mt-2;
+}
+.project-description{
+    @apply 
+    overflow-y-scroll  
+    p-2 ;
+}
+.project-description::-webkit-scrollbar {
+    display: none;
+  }
+.view-code{
+    @apply 
+    flex 
+    justify-center 
+    items-center 
+    p-1  
+    gap-2 
+    hover:bg-violet-400 
+    rounded-3xl;
+}
+
+.education-container{
+    @apply  
+    w-full
+    grid 
+    grid-cols-1 
+    md:grid-cols-3 
+    p-10 
+    gap-5 
+    mb-5;
+}
+.box{
+    @apply 
+    rounded-2xl 
+    text-center 
+    p-2 
+    h-96
+    hover:scale-105 
+    transition 
+    ease-in-out 
+    duration-300;
+}
+.education-img{
+    @apply 
+    rounded-t-2xl 
+    mx-auto;
+    height: 30%;
+    
+}
+.education-button{
+    @apply 
+    mt-2 
+    p-3 
+    text-xl 
+    bg-blue-600 
+    rounded-2xl 
+    text-white 
+    font-bold 
+    font-mono 
+    hover:scale-110 
+    transition ease-linear 
+    duration-300;
+}
+
+.transcripts{
+    @apply bg-indigo-900 text-white;
+} 
+
+.national-exams{
+    @apply bg-indigo-900 text-white ;
+}
+
+.university{
+    @apply bg-indigo-900 text-white ;
+}
+
+.send-email{
+    @apply  flex justify-center ;
+}
+.contacts-container{
+    @apply 
+    grid
+    grid-cols-1
+    md:grid-cols-2;
+}
+
+.social-media{
+    @apply font-sans;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
