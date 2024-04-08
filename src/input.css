@@ -21,7 +21,7 @@
     }
 .navbar-div{
         @apply 
-        bg-violet-600 
+        bg-indigo-900
         md:rounded-lg;
     }
 .navbar-div-ul{
@@ -50,7 +50,7 @@
 .bar{
     @apply  
     h-3 
-    bg-violet-600 
+    bg-indigo-900 
     rounded-lg 
     overflow-hidden;
 }
@@ -65,7 +65,7 @@
     @apply   
     md:w-96 
     h-3 
-    bg-white 
+    bg-indigo-100 
     rounded-lg 
     flex 
     justify-between
@@ -175,8 +175,8 @@
     border-transparent 
     hover:border-white 
     rounded-2xl 
-    bg-indigo-900
-    text-slate-200
+    bg-indigo-400
+    text-slate-900
     m-5 
     shadow-lg 
     hover:transform 
@@ -295,6 +295,12 @@
     @apply font-sans;
 }
 
+.nav-colored {
+    @apply bg-indigo-600
+}
+.nav-transparent {
+    @apply bg-violet-600
+}
 
 
 

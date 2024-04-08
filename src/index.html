@@ -9,7 +9,7 @@
 
 </head>
 
-<body  class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/gifbg.gif');">
+<body  class="absolute inset-0 bg-fixed bg-center bg-cover" style="background-image: url('img/gifbg.gif');">
 
         <!-- Header Section -->
         <div id="home" class="">.</div>
@@ -19,7 +19,7 @@
             <!--#1 Navigation Bar -->
         <nav  class="navbar">
         
-            <div class="navbar-div">
+            <div id="navbar-div" class="navbar-div">
                 <div id="menuButton" class="md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-10 h-10">
@@ -60,7 +60,7 @@
 
             <div class="mx-auto md:mx-0">
                 <div class="w-full md:h-full mx-auto rounded-lg relative  col-span-1 group"> 
-                    <img src="img/blob (1).svg" class="h-60 md:h-full md:absolute lg:top-10 lg:left-20 lg:group-hover:left-24 lg:group-hover:top-8 top-0 left-0 mx-auto transition-all duration-1000 ease-linear"/>
+                    <img id="bg-img" src="img/blob (1).svg" class="scale-100 h-60 md:h-full md:absolute lg:top-10 lg:left-20 lg:group-hover:left-24 lg:group-hover:top-8 top-0 left-0 mx-auto transition-all duration-1000 ease-linear "/>
                     <img src="img/profilepic.webp" class="max-h-60 md:max-h-full absolute  rounded-full lg:group-hover:left-36 lg:group-hover:top-2 top-0 left-23 lg:left-40 md:left-28 transition-all duration-1000 ease-linear">
                 </div>
                 
@@ -74,7 +74,7 @@
                 </div>
                 <div class="w-full h-60 mx-auto rounded-lg  text-lg font-bold text-center px-7"> 
                     <span class="text-3xl">&#x1F44B;</span> Discover my diverse portfolio! With a wealth of personal projects and internship programs under my belt, I've gathered extensive experience in software development. I assure you that my skills are guaranteed to meet your satisfaction.
-                    <div class="text-sm font-bold text-yellow-800">
+                    <div class="text-sm font-bold text-violet-800">
                         <div> &starf; Backend  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &starf;API Development</div>
                         <div> &starf; Frontend &nbsp;&nbsp;&nbsp;&nbsp; &starf;Database Design  </div>
                     </div>
@@ -154,7 +154,7 @@
             <div class="md:h-81 grid grid-cols-1 md:grid-cols-2">
 
                 <!-- techstacks -->
-                <div class="  bg-violet-100 m-5 rounded-3xl " >
+                <div class="  bg-indigo-300 m-5 rounded-3xl pb-0" >
             
                     <h2 class="text-center font-bold text-xl my-5">Techstack</h2>
                 
@@ -293,7 +293,7 @@
 
                 <div class="h-81 grid grid-cols-1 gap-y-8 m-5">
                     <!--tools -->
-                    <div class="bg-violet-100 rounded-3xl py-5">
+                    <div class="bg-indigo-300 rounded-3xl py-5">
 
                         <h2 class="text-center text-3xl font-bold my-5">Tools</h2>
 
@@ -343,7 +343,7 @@
                     </div>
 
                     <!-- soft skills -->
-                    <div class=" bg-violet-100 rounded-3xl p-3">
+                    <div class=" bg-indigo-300 rounded-3xl p-3">
                         
                         <h2 class="text-center text-3xl font-bold my-5">Soft Skills</h2>
 
@@ -647,7 +647,7 @@
 
           <!-- #8 Contacts -->
           <div id="contacts" class=""></div>
-          <div  class="h-full md:p-10 lg:p-20 p-3">
+          <div  class="h-full md:p-10 lg:p-20 p-3 bg-black opacity-90 mb-0">
         
               <h2 class="sections-title mb-5">Contacts</h2>
 
@@ -655,43 +655,43 @@
 
             <div class="contacts-container">
                 
-                <div class="social-media">
+                <div class="social-media"> 
                     <div class=" ">
                         <div class="max-w-lg bg-white shadow-md rounded-lg overflow-hidden">
-                            <div class="bg-indigo-900 py-4 px-6 text-white text-center">
+                            <div class="bg-indigo-400 py-4 px-6 text-black text-center">
                                 <h1 class="text-3xl font-semibold">Contact Me</h1>
                             </div>
-                            <div class="p-6 bg-indigo-900">
+                            <div class="p-6 bg-indigo-300 text-black">
                                 <ul class="space-y-4">
                                     <li class="flex items-center">
                                         <img src="img/gmail-svgrepo-com.svg" alt="Email" class="w-6 h-6 mr-2">
-                                        <span class="text-white font-semibold">Email : </span>
-                                        <a href="mailto:letaassefa7@gmail.com" class="text-white hover:underline">letaassefa7@gmail.com</a>
+                                        <span class="font-semibold">Email : </span>
+                                        <a href="mailto:letaassefa7@gmail.com" class=" hover:underline">letaassefa7@gmail.com</a>
                                     </li>
                                     <li class="flex items-center">
                                         <img src="img/github-142-svgrepo-com.svg" alt="GitHub" class="w-6 h-6 mr-2">
-                                        <span class="text-white font-semibold">GitHub :</span>
-                                        <a href="https://github.com/Leta-Asefa" class="text-white hover:underline">github.com/Leta-Asefa</a>
+                                        <span class="  font-semibold">GitHub :</span>
+                                        <a href="https://github.com/Leta-Asefa" class="  hover:underline">github.com/Leta-Asefa</a>
                                     </li>
                                     <li class="flex items-center">
                                         <img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="w-6 h-6 mr-2">
-                                        <span class="text-white font-semibold">LinkedIn : </span>
-                                        <a href="https://www.linkedin.com/in/leta-asefa/" class="text-white hover:underline">linkedin.com/in/letaasefa</a>
+                                        <span class="  font-semibold">LinkedIn : </span>
+                                        <a href="https://www.linkedin.com/in/leta-asefa/" class="  hover:underline">linkedin.com/in/letaasefa</a>
                                     </li>
                                     <li class="flex items-center">
                                         <img src="img/telegram-svgrepo-com.svg" alt="Telegram" class="w-6 h-6 mr-2">
-                                        <span class="text-white font-semibold">Telegram :</span>
-                                        <a href="https://t.me/letaasefa" class="text-white hover:underline">t.me/letaasefa</a>
+                                        <span class="  font-semibold">Telegram :</span>
+                                        <a href="https://t.me/letaasefa" class="  hover:underline">t.me/letaasefa</a>
                                     </li> 
                                     <li class="flex items-center">
                                         <img src="img/mobile-svgrepo-com.svg" alt="Phone" class="w-6 h-6 mr-2">
-                                        <span class="text-white font-semibold">Phone : </span>
-                                        <span class="text-white"> +251 991175590</span>
+                                        <span class="  font-semibold">Phone : </span>
+                                        <span class=" "> +251 991175590</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bg-gray-100 py-4 px-6 flex justify-end">
-                                <a href="#" class="text-blue-500 hover:underline">Back to Home</a>
+                            <div class="bg-indigo-400  py-4 px-6 flex justify-end">
+                                <a href="#" class="text-black hover:underline">Back to Home</a>
                             </div>
                         </div>
                     </div>
@@ -701,15 +701,15 @@
                     <form action="https://formsubmit.co/letaassefa7@gmail.com" method="POST" class="w-96 text-center">
                         <div>
                             <label for="name" class="block font-medium">Your Name</label>
-                            <input type="text" id="name" name="name" class="w-full bg-indigo-900 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 p-2"/>
+                            <input type="text" id="name" name="name" class="w-full bg-indigo-300 text-black rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 p-2"/>
                         </div>
                         <div>
                             <label for="email" class="block font-medium">Your Email</label>
-                            <input type="email" id="email" name="email" class="w-full bg-indigo-900 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 p-2">
+                            <input type="email" id="email" name="email" class="w-full bg-indigo-300 text-black rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 p-2">
                         </div>
                         <div>
                             <label for="message" class="block font-medium">Message</label>
-                            <textarea id="message" name="message" rows="6" class="w-full bg-indigo-900 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 p-2"></textarea>
+                            <textarea id="message" name="message" rows="6" class="w-full bg-indigo-300 text-black rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 p-2"></textarea>
                         </div>
     
                         <input type="hidden" name="_captcha" value="false"/>
@@ -724,10 +724,20 @@
 
            </div>
 
+           
+      
+          
         </div>
 
 
-
+          
+        <footer class="bg-gray-900 text-white py-2 w-full h-28">
+            <div class="container mx-auto flex justify-center items-center h-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12a3 3 0 0 1 3-3h.01a3 3 0 0 1 2.12.88l.354.354a3 3 0 0 1 0 4.242l-4.242 4.242a3 3 0 0 1-4.242 0l-.354-.354a3 3 0 0 1 0-4.242L9 12zm0 0v.01M15 12a3 3 0 0 0-3-3h-.01a3 3 0 0 0-2.12.88l-.354.354a3 3 0 0 0 0 4.242l4.242 4.242a3 3 0 0 0 4.242 0l.354-.354a3 3 0 0 0 0-4.242L15 12zm0 0v.01M15 12l-6 6" />
+                  </svg> <p>&copy; 2024 Leta Asefa . All rights reserved.</p> 
+            </div>
+          </footer>
        
 
 
@@ -735,8 +745,7 @@
     <script>
         let menuButton=document.getElementById('menuButton')
         let menuItems=document.getElementById('menuItems')
-        let baseImgPath="img/"
-        let images=['1 (10).jpg','1 (11).jpg','1 (12).jpg','1 (13).jpg','1 (14).jpg']
+        let bgImg=document.getElementById('bg-img')
 
         menuButton.addEventListener('click',()=>{
             console.log('clicked')
@@ -747,8 +756,34 @@
             menuItems.classList.add('hidden')
         })
 
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll("nav ul li a");
+            
+            navLinks.forEach(link => {
+              link.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+              });
+            });
+          });
         
 
+        setInterval(()=>{
+           if(bgImg.classList.contains('scale-105')){
+            bgImg.classList.replace('scale-105','scale-100')
+           }else{
+            bgImg.classList.replace('scale-100','scale-105')
+           }
+        } ,1000 )
+        
+     
+
+        
 
     </script>
 
