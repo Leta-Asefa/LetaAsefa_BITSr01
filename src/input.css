@@ -124,7 +124,7 @@
 .flex-container {
     @apply 
     my-20 
-    md:my-0  
+    md:my-0
     flex 
     gap-5  
     h-32;
@@ -226,6 +226,70 @@
     rounded-3xl;
 }
 
+.experience-container{
+    @apply
+    
+     gap-10
+     md:px-24
+     px-10
+     grid
+     grid-cols-1 
+     md:grid-cols-3;
+}
+
+.experience-element{
+    @apply
+    mt-16
+    bg-indigo-900
+    border-2
+    border-indigo-300
+    rounded-full
+    h-full
+    transition
+    ease-linear
+    duration-1000
+    hover:scale-110;
+
+}
+.experience-img{
+
+    @apply 
+    rounded-full
+    m-5
+    mx-auto;
+    width: 38%;
+
+
+}
+.experience-description{
+    @apply
+    text-indigo-300
+    p-3
+    text-lg
+    text-center
+    overflow-x-scroll
+    mt-5;
+}
+.experience-description::-webkit-scrollbar {
+    display: none;
+  }
+.company-name{
+ @apply 
+ text-2xl
+ text-center
+ text-indigo-300
+}
+.date{
+    @apply 
+    text-white
+    text-center
+    text-sm;
+}
+
+
+
+
+
 .education-container{
     @apply  
     w-full
@@ -259,12 +323,13 @@
     mt-2 
     p-3 
     text-xl 
-    bg-blue-600 
+    bg-white
     rounded-2xl 
-    text-white 
+    text-indigo-900 
     font-bold 
     font-mono 
     hover:scale-110 
+    hover:font-bold
     transition ease-linear 
     duration-300;
 }
