@@ -175,7 +175,8 @@
     border-transparent 
     hover:border-white 
     rounded-2xl 
-    bg-indigo-400
+    bg-indigo-300
+    bg-opacity-75
     text-slate-900
     m-5 
     shadow-lg 
