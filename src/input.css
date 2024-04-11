@@ -8,6 +8,9 @@
    md:grid 
    md:grid-cols-1;
 }
+html{
+    
+}
 
 .navbar{
     @apply  
